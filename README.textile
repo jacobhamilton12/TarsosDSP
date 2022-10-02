@@ -70,6 +70,8 @@ TarsosDSP uses "Apache Ant":http://ant.apache.org/ as a build system. The instru
 
 h3. TarsosDSP with Ant
 
+> __Note__ Must edit line 11 of build.xml to point to android.jar
+
 To  you need "Apache Ant":http://ant.apache.org/ and "git":http://git-scm.com/ installed on your system. The following commands fetch the source and build the library and example jars: 
 <pre><code>git clone https://JorenSix@github.com/JorenSix/TarsosDSP.git
 cd TarsosDSP
@@ -77,6 +79,7 @@ cd build
 ant tarsos_dsp_library #Builds the core TarsosDSP library
 ant build_examples #Builds all the TarsosDSP examples
 ant javadoc #Creates the documentation in TarsosDSP/doc
+ant tarsos_dsp_android_library #Builds android jar
 </code></pre>
  
 h2. Source Code Organization & Developing
