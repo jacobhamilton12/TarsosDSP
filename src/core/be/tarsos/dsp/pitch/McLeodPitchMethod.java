@@ -367,8 +367,8 @@ public final class McLeodPitchMethod implements PitchDetector {
 		}
 
 		while (pos < nsdf.length - 1) {
-			assert nsdf[pos] >= 0;
-			if (nsdf[pos] > nsdf[pos - 1] && nsdf[pos] >= nsdf[pos + 1]) {
+			// assert nsdf[pos] >= 0;
+			if (nsdf[pos] >= 0 && nsdf[pos] > nsdf[pos - 1] && nsdf[pos] >= nsdf[pos + 1]) {
 				if (curMaxPos == 0) {
 					// the first max (between zero crossings)
 					curMaxPos = pos;
